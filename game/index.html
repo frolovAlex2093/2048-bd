@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/5kHZ6RKrExyNyTiZnesIlVor5mxzPh3r_5K1UeeTRCc6KLpku1Q3MT_AD6BNQ0ZVPQ">
+    <script src="app.js" type="module"></script>
+    <title>2048</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="timer">0:00</div>
+        <div class="title">2048</div>
+        <div class="score">0</div>
+
+    </header>
+
+
+    <div class="game-board">
+        <div class="touch-panel"></div>
+    </div>
+
+    <button class="ststistic__button">СТАТИСТИКА</button>
+
+    <div class="statistic__list hide">
+        <div class="statistic__items">
+            <div class="statistic__colum-position">Позиция
+
+            </div>
+            <div class="statistic__colum-time">Время
+
+            </div>
+            <div class="statistic__colum-name">Имя
+            </div>
+        </div>
+        <button class="satistic__close">закрыть</button>
+    </div>
+
+    <div class="alert-game show">
+        <div class="alert-game__text"></div>
+        <input type="text" value="" class="user-name-input" placeholder="Введите имя">
+        <button class="alert-game__button">НАЧАТЬ</button>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

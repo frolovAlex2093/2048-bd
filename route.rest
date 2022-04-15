@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/v1/record/
+
+
+###
+
+POST http://localhost:3000/api/v1/record/
+Content-Type: application/json
+
+{
+    "username": "testName",
+    "time": "testTime"
+}
+
+###
+
+DELETE http://localhost:3000/api/v1/record/
+
+###
+
+GET http://localhost:3000/api/v1/record/625933fed0f55a17da2dbead
+
+###
+
+DELETE http://localhost:3000/api/v1/record/6257f7806f74a20ddde63824
+
+###
+
+PATCH http://localhost:3000/api/v1/record/6259324a604e72978dc9a315
+Content-Type: application/json
+
+{
+    "time": "9:9"
+}
