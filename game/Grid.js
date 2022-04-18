@@ -1,4 +1,4 @@
-const GRID_SIZE = 3
+const GRID_SIZE = 5
 const CELL_SIZE = 13
 const CELL_GAP = 1
 

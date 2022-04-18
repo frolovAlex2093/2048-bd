@@ -346,7 +346,7 @@ function checkWin() {
     for (let i = 0; i < grid.cells.length; i++) {
         if (grid.cells[i].tile) {
             count += grid.cells[i].tile.value
-            if (grid.cells[i].tile.value === 32) {
+            if (grid.cells[i].tile.value === 2048) {
                 clearInterval(time)
                 alertGame("win")
             }
@@ -378,6 +378,8 @@ function alertGame(text) {
         let record = {}
         alertText.innerHTML = `Вы выйграли <br> время: ${timeM}:${seconds} <br> счет: ${score}`
         alertButton.innerHTML = "ЗАНОВО"
+        inputName.classList.remove("hide")
+        inputName.classList.add("show")
         alertButton.addEventListener("click", async () => {
             newRecord = { username: inputName.value, time: `${minutes}:${seconds}` }
             await request('/api/v1/record/', "POST", newRecord)
@@ -393,6 +395,8 @@ function alertGame(text) {
     alertButton.addEventListener("click", () => {
         alert.classList.remove("show")
         alert.classList.add("hide")
+        inputName.classList.remove("show")
+        inputName.classList.add("hide")
         startGame()
     })
 }
